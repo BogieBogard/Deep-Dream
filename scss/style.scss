@@ -1,0 +1,60 @@
+body {
+    background: black;
+    color: silver;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+#wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#output {
+    margin: 2em 1em;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #fc9;
+    
+    .title {
+        color: white;
+        text-align: center;
+    }
+    
+    ul {
+        color: blue;
+        
+        li {
+            margin: 1em;
+        }
+        
+        a {
+            color: lightblue;
+            text-decoration: none;
+            
+            &.win {
+                color: limegreen;
+            }
+            
+            &.lose {
+                color: red;
+            }
+            
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    
+    .inv {
+        color: #ca9;
+        font-size: 0.8em;
+        padding-top: 2em;
+    }
+}
