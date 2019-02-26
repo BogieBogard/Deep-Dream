@@ -17,14 +17,16 @@ h1 {
 #output {
   margin: 2em 1em;
   text-align: left;
-  font-family: monospace;
+  font-family: 'Crimson Text', serif;
   font-size: 1.1em;
   line-height: 1.5;
-  color: #fc9;
+  color: rgb(255, 255, 255);
 }
 #output .title {
   color: white;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
 }
 #output ul {
   color: blue;
@@ -33,20 +35,22 @@ h1 {
   margin: 1em;
 }
 #output ul a {
-  color: lightblue;
-  text-decoration: none;
+  color: rgb(170, 222, 240);
+  font-family: 'Chonburi';
+  font-size: 14pt;
+
 }
 #output ul a.win {
-  color: limegreen;
+  color: rgb(6, 179, 6);
 }
 #output ul a.lose {
-  color: red;
+  color: rgb(241, 241, 241);
 }
 #output ul a:hover {
   color: white;
 }
 #output .inv {
-  color: #ca9;
+  color: rgb(253, 220, 220);
   font-size: 0.8em;
   padding-top: 2em;
 }

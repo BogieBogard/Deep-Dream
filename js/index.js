@@ -36,21 +36,17 @@ console.clear();
 var ENTRIES = [{
         // Recreation room
         id: 'e_recroom',
-        text: 'You are in a small-ish room set off from a larger atrium.  ' +
-            'A square glass table sits in the centre, surrounded by ' +
-            'worn-looking sofa seats.  A large TV is affixed to the wall, ' +
-            'cables snaking out from behind it.',
+        text: 'An Interactive Digital Story',
         extra: [{
             requires: '!mask',
-            text: 'Your gaze is drawn to a large ' +
-                'plush toy sitting in one of the chairs.'
+            text: ''
         }],
         options: [{
-            text: 'Examine the plush toy.',
+            text: 'Start From the Beginning',
             goto: 'e_plushie',
             requires: '!mask'
         }, {
-            text: 'Move into the main atrium.',
+            text: 'Enter Chapter Code to Skip Ahead',
             goto: 'e_hall'
         }],
         start: true
@@ -477,7 +473,7 @@ var Game = (function() {
 
         // Clear the container and write the body text
         $el.html('');
-        if (isStart) $el.append('<p class="title">*** Escape ***</p>');
+        if (isStart) $el.append('<p class="title">Deep Dream</p>');
         $el.append('<p>' + d.text + '</p>');
 
         d.extra.forEach(function(ext) {
