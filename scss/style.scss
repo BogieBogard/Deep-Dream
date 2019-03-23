@@ -4,7 +4,7 @@ $easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 /* Pen's SCSS */
 body {
 //  font-family: ;
-  background: white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86637/sky.jpeg) no-repeat center 0% / cover;
+  background: white url(https://raw.githubusercontent.com/BogieBogard/Deep-Dream/master/assets/custom-images/deepDreamUnedited.jpg) no-repeat center 0% / cover;
   transition: background-position .3s ease-in-out;
   
   &.fp-viewing-0 {

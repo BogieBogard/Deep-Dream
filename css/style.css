@@ -1,7 +1,7 @@
 /* Variable definition */
 /* Pen's SCSS */
 body {
-    background: white url(https://raw.githubusercontent.com/BogieBogard/Deep-Dream/master/assets/custom-images/deepDreamSilhouette.jpg) no-repeat center 0%/cover;
+    background: white url(https://raw.githubusercontent.com/BogieBogard/Deep-Dream/master/assets/custom-images/deepDreamUnedited.jpg) no-repeat center 0%/cover;
     transition: background-position .3s ease-in-out;
   }
   body.fp-viewing-0 {
