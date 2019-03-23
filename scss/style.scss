@@ -1,60 +1,62 @@
+/* Variable definition */
+$easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+/* Pen's SCSS */
 body {
-    background: black;
-    color: silver;
-    font-family: Arial, sans-serif;
-    text-align: center;
+//  font-family: ;
+  background: white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86637/sky.jpeg) no-repeat center 0% / cover;
+  transition: background-position .3s ease-in-out;
+  
+  &.fp-viewing-0 {
+    background-position: center 0%;
+  }
+  
+  &.fp-viewing-1 {
+    background-position: center 50%;
+  }
+  
+  &.fp-viewing-2 {
+    background-position: center 100%;
+  }
+}
+
+.one,
+.three {
+  background: linear-gradient(-45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+}
+
+.two {
+  background: linear-gradient(45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+  text-align: right;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 58px;
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 64px;
+  overflow: hidden;
+  line-height: 3.5;
+  transition: line-height .85s $easeInOutQuart;
 }
 
 h1 {
-    color: white;
+  font-weight: 100;
+  transition-delay: .3s;
 }
 
-#wrap {
-    max-width: 800px;
-    margin: 0 auto;
+h2 {
+  margin-top: -6px;
+  font-weight: 300;
+  transition-delay: .8s;
 }
 
-#output {
-    margin: 2em 1em;
-    text-align: left;
-    font-family: monospace;
-    font-size: 1.1em;
-    line-height: 1.5;
-    color: #fc9;
-    
-    .title {
-        color: white;
-        text-align: center;
-    }
-    
-    ul {
-        color: blue;
-        
-        li {
-            margin: 1em;
-        }
-        
-        a {
-            color: lightblue;
-            text-decoration: none;
-            
-            &.win {
-                color: limegreen;
-            }
-            
-            &.lose {
-                color: red;
-            }
-            
-            &:hover {
-                color: white;
-            }
-        }
-    }
-    
-    .inv {
-        color: #ca9;
-        font-size: 0.8em;
-        padding-top: 2em;
-    }
+.section.active {
+  h1,
+  h2 {
+    line-height: 1;
+  }
 }

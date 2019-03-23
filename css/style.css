@@ -1,56 +1,55 @@
+/* Variable definition */
+/* Pen's SCSS */
 body {
-  background: black;
-  color: silver;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-h1 {
-  color: white;
-}
-
-#wrap {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#output {
-  margin: 2em 1em;
-  text-align: left;
-  font-family: 'Crimson Text', serif;
-  font-size: 1.1em;
-  line-height: 1.5;
-  color: rgb(255, 255, 255);
-}
-#output .title {
-  color: white;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-}
-#output ul {
-  color: blue;
-}
-#output ul li {
-  margin: 1em;
-}
-#output ul a {
-  color: rgb(170, 222, 240);
-  font-family: 'Chonburi';
-  font-size: 14pt;
-
-}
-#output ul a.win {
-  color: rgb(6, 179, 6);
-}
-#output ul a.lose {
-  color: rgb(241, 241, 241);
-}
-#output ul a:hover {
-  color: white;
-}
-#output .inv {
-  color: rgb(253, 220, 220);
-  font-size: 0.8em;
-  padding-top: 2em;
-}
+    background: white url(https://raw.githubusercontent.com/BogieBogard/Deep-Dream/master/assets/custom-images/deepDreamSilhouette.jpg) no-repeat center 0%/cover;
+    transition: background-position .3s ease-in-out;
+  }
+  body.fp-viewing-0 {
+    background-position: center 0%;
+  }
+  body.fp-viewing-1 {
+    background-position: center 50%;
+  }
+  body.fp-viewing-2 {
+    background-position: center 100%;
+  }
+  
+  .one,
+  .three {
+    background: linear-gradient(-45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+  }
+  
+  .two {
+    background: linear-gradient(45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+    text-align: right;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 64px;
+    overflow: hidden;
+    line-height: 3.5;
+    transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  h1 {
+    font-weight: 100;
+    transition-delay: .3s;
+  }
+  
+  h2 {
+    margin-top: -6px;
+    font-weight: 300;
+    transition-delay: .8s;
+  }
+  
+  .section.active h1,
+  .section.active h2 {
+    line-height: 1;
+  }
+  

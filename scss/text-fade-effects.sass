@@ -1,0 +1,39 @@
+body
+  background: rgb(248,250,252)
+  font-size: 20px
+  font-family: 'Crimson Text', serif
+  color: 444
+
+h1
+  padding-top: 100px
+  font-weight: 600
+
+h1, h3, h4, p
+  width: 600px
+  margin: 20px auto
+  display: block
+
+h4
+  color: #666
+  
+div.blur
+  position: fixed
+  width: 100%
+  height: auto
+  left: 0
+  top: 0
+
+div.blur.bottom
+  top: auto
+  bottom: 0
+
+div.blur div
+  width: 100%
+  height: 1px
+
+$class-slug: itm !default
+
+@for $i from 1 through 100
+  div.blur div.#{$class-slug}_#{$i}
+    background: rgba(248,250,252, (100 - $i) / 80)
+    backdrop-filter: blur(#{((100 - $i) / 20)}px)

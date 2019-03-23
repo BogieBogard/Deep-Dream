@@ -1,0 +1,49 @@
+/* Base Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body{
+  background:#4A6E8C;
+  font-family:oswald;
+  color:white;
+  text-transform:uppercase;
+  text-align:center;
+  .container{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:0;
+    right:0;
+  }
+  .intro{
+
+    font-size:30px;
+  }
+  .sub{
+    font-size: 26px;
+    letter-spacing: 1.4px;
+    margin-top: -4px;
+    color: #94C9F5;
+  }
+  .desc{
+    font-size: 27px;
+    letter-spacing: 1.23px;
+    margin-top: 4px;
+    color: #FFCB00;
+  }
+  .fade{
+    font-size: 53px;
+    margin-top: -14px;
+  }
+  .bounce{
+    font-size: 44.5px;
+    margin-top: -18px;
+    color: #F99323;
+  }
+  .dash2{
+    margin-top:-10px;
+  }
+  .usage{
+    font-size: 30px;
+  }
+}
