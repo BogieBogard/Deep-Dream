@@ -1,55 +1,69 @@
-/* Variable definition */
-/* Pen's SCSS */
+html {
+	width:100%;
+	height:100%;	
+	min-width:440px;
+}
 body {
-    background: white url(https://raw.githubusercontent.com/BogieBogard/Deep-Dream/master/assets/custom-images/deepDreamUnedited.jpg) no-repeat center 0%/cover;
-    transition: background-position .3s ease-in-out;
-  }
-  body.fp-viewing-0 {
-    background-position: center 0%;
-  }
-  body.fp-viewing-1 {
-    background-position: center 50%;
-  }
-  body.fp-viewing-2 {
-    background-position: center 100%;
-  }
-  
-  .one,
-  .three {
-    background: linear-gradient(-45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
-  }
-  
-  .two {
-    background: linear-gradient(45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
-    text-align: right;
-  }
-  
-  h1,
-  h2 {
-    font-family: sans-serif;
-    font-size: 58px;
-    max-width: 830px;
-    padding: 0 15px;
-    margin: 0 auto;
-    height: 64px;
-    overflow: hidden;
-    line-height: 3.5;
-    transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  
-  h1 {
-    font-weight: 100;
-    transition-delay: .3s;
-  }
-  
-  h2 {
-    margin-top: -6px;
-    font-weight: 300;
-    transition-delay: .8s;
-  }
-  
-  .section.active h1,
-  .section.active h2 {
-    line-height: 1;
-  }
-  
+	margin:0;
+	opacity:0;
+	color:#3584B2;
+	text-align:center;	
+	text-shadow:0 1px 1px #FFF;
+	font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+	background-image:-webkit-radial-gradient(50% 10%, cover, #ACCDE5, #56A8E2);
+	background-image:-moz-radial-gradient(50% 10%, cover, #ACCDE5, #56A8E2);
+	background-image:-ms-radial-gradient(50% 10%, cover, #ACCDE5, #56A8E2);
+	background-image:-o-radial-gradient(50% 10%, cover, #ACCDE5, #56A8E2);
+	background-image:radial-gradient(50% 10%, cover, #ACCDE5, #56A8E2);
+	-webkit-transition:opacity 0.3s ease;
+	   -moz-transition:opacity 0.3s ease;
+	    -ms-transition:opacity 0.3s ease;
+	     -o-transition:opacity 0.3s ease;
+	        transition:opacity 0.3s ease;
+}
+header {
+	height:80px;
+}
+h1 {
+	font-size:46px;
+	margin:10px 0 0 0;
+	font-weight:normal;	
+}
+h2 {
+	font-size:24px;
+	margin:28px 0 0 0;
+	font-weight:normal;	
+}
+p {
+	width:320px;
+	margin:0 auto;	
+	font-size:13px;	
+}
+i {
+	display:block;
+	margin:0 0 20px 0;
+}
+nav a {
+	color:#FFF;
+	width:120px;
+	font-size:14px;
+	cursor:pointer;
+	overflow:hidden;
+	border-radius:3px;
+	position:relative;
+	background:#40A1DD;
+	display:inline-block;
+	padding:10px 0 10px 0;	
+	margin:10px 10px 30px 10px;	
+	border:1px solid rgba(255,255,255,.30);
+	text-shadow:1px 1px 2px rgba(0,0,0,.50);	
+	font-family:Verdana, Geneva, sans-serif;
+	box-shadow:0 0 0 1px #008ADB, 0 2px 0 1px #008ADB, 0 3px 6px #000;	
+}
+nav a:active {
+	top:3px;
+	box-shadow:0 0 0 1px #008ADB, 0 0 0 1px #008ADB, 0 0 4px #000;
+}
+nav a span {
+	display:block;
+}
